@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Edan Instruments, Inc.</title>
+    <meta name="description" content="Edan Instruments, Inc.">
+    <meta name="keywords" content="Edan Instruments, Inc.">
+    <link href="templates/libang/en/style/index.css" rel="stylesheet" type="text/css">
+    <link href="templates/libang/en/style/common.css" rel="stylesheet" type="text/css">
+    <link href="templates/libang/en/style/jquery.slideBox.css" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="bookmark" href="favicon.ico">
+    <script src="templates/libang/en/scripts/jquery-1.7.1.min.js"></script>
+    <style></style>
+    <!--script src="/templates/libang/en/scripts/slide.js"></script-->
+    <script src="templates/libang/en/scripts/jquery.jcarousel.js"></script>
+    <script src="templates/libang/en/scripts/common.js"></script>
+    <script src="templates/libang/en/scripts/jquery.slideBox.min.js"></script>
+    <!--[if IE 6]>
+	<script type="text/javascript" src="/templates/libang/en/scripts/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">
+	DD_belatedPNG.fix('*');
+	</script>
+<![endif]-->
+    <script>
+        jQuery(function ($) {
+
+
+            $('#swBanner').slideBox({
+
+                duration: 0.8,//滚动持续时间，单位：秒
+
+                easing: 'linear',//swing,linear//滚动特效
+
+                delay: 12,//滚动延迟时间，单位：秒
+
+                hideClickBar: false,//不自动隐藏点选按键
+
+                clickBarRadius: 10
+            });
+
+
+            var initValue = 'FTS-6';
+            $("#keyword").attr("value", "FTS-6").css({ color: '#7B7B7B' }).focus(function () {
+                var value = $(this).val();
+                if (value = initValue)
+                { $(this).val(""); }
+                $(this).css({ color: '#000' });
+            }).blur(function () {
+                var value2 = $(this).val();
+                if (value2.length == 0) {
+                    $(this).val(initValue);
+                    $(this).css({ color: '#7B7B7B' });
+                }
+            });
+
+            $('#ul').find('li').each(function () {
+                var li = $(this).find('a');
+                var value = li.text();
+                if (value.length > 37)
+                    li.text(value.substring(0, 37) + '...');
+                else
+                    li.text(value);
+            }
+            );
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="top">
+                <a href="index.html" class="logo"><img src="templates/libang/en/style/images/logo.png"></a>
+            </div>
+            <!-- top -->
+            <div class="nav">
+
+                <ul class="jsddm" id="jsddm" onclick="jsddm_cluk()">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="http://www.edan.com.cn/html/EN/Company/milestones/" onclick="alert('you are now being redirected to edan.cn');">Company</a>
+                        <ul>
+                            <li><a href="http://www.edan.com.cn/html/EN/Company/about/" onclick="alert('you are now being redirected to edan.cn');">About Edan</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/Company/milestones/" onclick="alert('you are now being redirected to edan.cn');">Milestones</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/Company/vision/" onclick="alert('you are now being redirected to edan.cn');">Vision</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/Company/quality/" onclick="alert('you are now being redirected to edan.cn');">Quality Commitment</a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.edan.com.cn/html/EN/news/companynews/" onclick="alert('you are now being redirected to edan.cn');">News Center</a>
+                        <ul>
+                            <li><a href="http://www.edan.com.cn/html/EN/news/companynews/" onclick="alert('you are now being redirected to edan.cn');">News Release</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/" onclick="alert('you are now being redirected to edan.cn');">Exhibitions &amp; Event</a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.edan.com.cn/html/EN/products/ECG/" onclick="alert('you are now being redirected to edan.cn');">Products</a>
+                        <ul>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/ECG/" onclick="alert('you are now being redirected to edan.cn');">Diagnostic ECG</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/patientmonitoring/" onclick="alert('you are now being redirected to edan.cn');">Patient Monitoring</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/OBGYN/" onclick="alert('you are now being redirected to edan.cn');">OB &amp; GYN</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/ultrasound/" onclick="alert('you are now being redirected to edan.cn');">Ultrasound Imaging</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/IVD/" onclick="alert('you are now being redirected to edan.cn');">In-Vitro Diagnostics</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/POCT/" onclick="alert('you are now being redirected to edan.cn');">Point-of-Care Testing</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/products/veterinary/" onclick="alert('you are now being redirected to edan.cn');">Veterinary</a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.edan.com.cn/html/EN/services/network/" onclick="alert('you are now being redirected to edan.cn');">Services</a>
+                        <ul>
+                            <li><a href="http://www.edan.com.cn/html/EN/services/network/" onclick="alert('you are now being redirected to edan.cn');">Service Network</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/services/Warranty/" onclick="alert('you are now being redirected to edan.cn');">Warranty</a></li>
+                            <li><a href="http://183.47.44.185/HomePage.aspx?lang=en" onclick="alert('you are now being redirected to edan.cn');">License</a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact us</a>
+                        <ul>
+                            <li><a href="contact.html">Contact Information</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/contactus/visitus/" onclick="alert('you are now being redirected to edan.cn');">Visit Us</a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Group Members</a>
+                        <ul>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Laboratory</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Edan Diagnostics, Inc.</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Edan Medical</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Instruments GmbH</a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Medical India </a></li>
+                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Medical Ltd. </a></li>
+                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            <!-- nav -->
+        </div>
+        <!-- header end -->
+        <div id="swBanner" class="slideBox" style="width: 1920px; height: 408px;">
+            <ul class="items" style="width: 9600px; left: -1920px;">
+                <li class="active" style="width: 1920px; height: 408px;"><a href="" title="2.jpg "><img src="http://www.edan.com.cn/UploadFiles/2017/11/W14174307661505BF.jpg"></a></li>
+                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html" title="SD1" onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/10/W312020574F2323B8.jpg"></a></li>
+                <li class="" style="width: 1920px; height: 408px;"><a href="" title="H50"><img src="http://www.edan.com.cn/UploadFiles/2017/09/W0511250924B6A928.jpg" ></a></li>
+                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/news/companynews/201612/122457.html" title="AX8" onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/07/W27173330911622B6.jpg"></a></li>
+                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/Fetal%20Telemetry%20System/201703/292482.html" title="FTS-6.jpg " onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/03/W290950005A579F30.jpg"></a></li>
+            </ul>
+            <div class="tips" style="opacity: 0.6;">
+                <div class="title"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html"  onclick="alert('you are now being redirected to edan.cn');">SD1</a></div>
+                <div class="nums" style=""><a href="" class="" style="border-radius: 10px;">2.jpg </a><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html"
+                        style="border-radius: 10px;" class="active"  onclick="alert('you are now being redirected to edan.cn');">SD1</a><a href="" style="border-radius: 10px;" class="">H50</a>
+                    <a href="http://www.edan.com.cn/html/EN/news/companynews/201612/122457.html" style="border-radius: 10px;" class=""  onclick="alert('you are now being redirected to edan.cn');">AX8</a>
+                    <a
+                        href="http://www.edan.com.cn/html/EN/products/OBGYN/Fetal%20Telemetry%20System/201703/292482.html" style="border-radius: 10px;"
+                        class=""  onclick="alert('you are now being redirected to edan.cn');">FTS-6.jpg </a>
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
+        <div class="main">
+            <div class="content">
+                <div class="mLeft mbox">
+                    <h3>News Center</h3>
+                    <ul id="ul">
+                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201711/172836.html" onclick="alert('you are now being redirected to edan.cn');">Edan’s acquisition of Sulis</a>
+                            <!--span>2017-11-17</span-->
+                        </li>
+                        <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/201711/092832.html" onclick="alert('you are now being redirected to edan.cn');">Please visit us at Medica 2017</a>
+                            <!--span>2017-11-09</span-->
+                        </li>
+                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201710/312805.html" onclick="alert('you are now being redirected to edan.cn');">New Release of SD1 Ultrasonic Pocket ...</a>
+                            <!--span>2017-10-31</span-->
+                        </li>
+                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201709/072756.html" onclick="alert('you are now being redirected to edan.cn');">EDAN in ESC 2017</a>
+                            <!--span>2017-09-07</span-->
+                        </li>
+                        <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/201709/072755.html" onclick="alert('you are now being redirected to edan.cn');">Please visit us at Hospital Expo 2017</a>
+                            <!--span>2017-09-07</span-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="mCenter mbox" style="background:url(templates/libang/en/style/images/centBg2.gif) no-repeat; width: 638px;">
+                    <h3>UK Site</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis porta nisl, sed fermentum mi rutrum vitae. Phasellus et nibh dignissim, condimentum magna et, consequat magna. Praesent egestas nisi nec ante scelerisque, ac aliquam eros consectetur. Duis vel nibh tellus. Phasellus pretium consequat augue non viverra. Aenean rutrum sem nec dapibus tincidunt. Nullam placerat nisl a fermentum scelerisque.
+
+Quisque ipsum nisi, sodales a viverra in, luctus et lacus. Duis scelerisque feugiat libero ac lacinia. Integer at tellus leo. Praesent iaculis lectus id libero iaculis elementum. Proin dignissim felis diam, vel imperdiet odio tincidunt ut. Nunc pellentesque felis sit amet turpis mattis, eu condimentum lorem feugiat. Nullam blandit consequat libero et egestas. Sed interdum semper porta. Nullam sem dui, cursus id lobortis vitae, volutpat euismod lectus. Etiam auctor est id purus consequat mollis. Ut at elit a sapien blandit luctus vitae vel metus. Suspendisse sit amet tempor ipsum, et interdum dui.</p>                    
+                </div>
+                <div class="mRight mbox">
+                    
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- main end -->
+        <div class="footer">
+            <div class="footLeft">
+                <a href="http://www.edan.com.cn/html/EN/enedan/termsofuse/" onclick="alert('you are now being redirected to edan.cn');">Terms of Use </a>&nbsp;|&nbsp;
+                <a href="contact.html">Contact </a>&nbsp;
+                <!--ignore for now-->
+                <!--<a href="html/EN/enedan/SiteMap/">Site Map</a>-->
+            </div>
+            <div class="footRight">© 2005-2012 Edan Instruments, Inc.&nbsp;&nbsp;
+            </div>
+            <!-- footer end -->
+
+        </div>
+</body>
+
+
+</html>
+</script>
+</div>
+</div>
+</div>
+</body>
+
+</html>

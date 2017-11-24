@@ -1,0 +1,108 @@
+/* CSS Document */
+*{padding:0; margin:0; list-style-type:none}
+a{text-decoration:none}
+a img{border:0}
+body{font-size:12px; font-family:"Arial"; background:#fff}
+.clear{clear:both}
+a:hover{text-decoration:none;}
+/*---------------*/
+.header{height:105px;width:100%; background:url(images/headerBg.png) repeat-x; clear:both; position:relative;z-index:1000}
+.top{height:70px; width:982px; margin:0 auto; background:url(images/topBg.gif) repeat-x}
+.logo{display:block; height:70px; width:135px; float:left}
+.topRico{float:right; margin:8px 10px 0px 0px;}
+.topRight{float:right; padding:12px 0px 0 0;width:230px}
+.topRight span{ white-space:nowrap;width:107px;color:#72716f; line-height:22px; padding-left:15px;_padding-left:25px}
+.search{background:url(images/search.gif) no-repeat; border:0; width:146px; padding-left:18px; height:22px; line-height:22px; display:block; float:left; margin-left:11px}
+.header .butGo{background:url(images/butGo.gif) no-repeat; cursor: pointer; width:31px; height:25px; border:0; float:left; display:block; margin-left:3px}
+.submitdiv{width:230px; height:22px}
+/*---------------*/
+.nav{width:982px; height:36px; margin:0 auto; clear:both; position:relative;}
+.column{height:36px; width:50px;color:#727272; top:12px;top:13px\9;*top:14px; right:4px; position:absolute}
+.column a{color:#727272}
+.column a:hover{color:#009fa8}
+.column span{font-family:Arial}
+.jsddm li{float: left; font-family:"Arial";vertical-align: bottom}
+.jsddm li a{display: block;min-width:20px;_width:20px;white-space: nowrap; height:35px; line-height:36px; padding:0 28px; color:#72716f; font-weight:bold; background:url(images/navBg-1.gif) no-repeat right 0; border:solid 1px #fff; border-bottom:0}
+.jsddm li a.over,
+.jsddm li a:hover{background:url(images/navBG.png) ; color:#8a8a8a; height:35px; border-top:1px solid #e3e3e3;border-right:1px solid #e3e3e3;border-left:1px solid #e3e3e3;text-decoration:none;color:#009fa8;}
+.jsddm li ul{position: absolute;display:none;z-index:1000; width:195px;}
+.jsddm li ul li{ float:none; display:block;background:url(images/navulBg.png) repeat-y; width:195px;}
+.jsddm li ul li a{ background:url(images/nav-li.png) no-repeat 30px center; width:112px; height:40px; line-height:40px; padding-left:50px; color:#8a8a8a; font-weight:normal; border:0;font-weight:bold;}
+.jsddm li ul li a:hover{background:url(images/nav-li.png) no-repeat 30px center; width:112px; border:0; height:40px; line-height:40px}
+.jsddm .cpzs{width:833px; position:absolute;margin-left:-200px}
+.jsddm .cpzs li{background:none}
+.jsddm .cpzs ul{position:relative}
+.jsddm .cpzs .cpzs-bg{background:url(images/cpzsBg.png) repeat-y; width:835px}
+.jsddm .cpzs-bg .zsli{width:208px; float:left}
+.titile{height:40px;width:208px;position: relative; cursor:pointer; overflow:hidden}
+.link_btn{background:url(images/nav-li.png) no-repeat 30px center; width:158px;line-height:40px; padding-left:50px; color:#72716f;font-weight:bold;}
+.link_btn:hover{font-weight:bold;color:#009fa8;}
+.box_container{width: 208px;display: none; overflow:hidden}
+#box_container ol{margin-bottom:0;padding-bottom:10px;/* background:url(images/ico-3.gif) repeat-y right 0;*/}
+#box_container a{display:inline; background:none; padding:0; line-height:20px; font-family:"Arial"; font-weight:normal}
+#box_container li{height:20px; line-height:20px;  background:url(images/ico-8.gif) no-repeat 35px center; padding-left:45px}
+#box_container li a:hover{font-weight:bold;}
+/*---------------*/
+.content{width:982px; margin:1px auto 0; padding-top:15px}
+/*---------------*/
+.subLeft{width:173px; float:left; padding:0 20px; overflow:hidden}
+.subLeft h3{height:26px; font-size:16px; color:#72716f; font-weight:normal; font-family:"Arial"}
+.leftProductNav{width:173px; margin:20px 0}
+.leftProductNav li{width:173px; overflow:hidden}
+.leftProductNav li a{width:151px; height:22px; line-height:22px; display:block; font-size:12px;color:#72716f;  padding-left:7px; overflow:hidden}
+.leftProductNav li .now,.leftProductNav li a:hover{color:#009fa8; font-weight:bold;text-decoration:none;}
+.leftProductNav li li a{background:none; padding-left:20px;  background:url(images/ico-8.gif) no-repeat 10px center; line-height:24px; border:0}.leftProductNav li li a:hover,.leftProductNav li li .now2{font-weight:bold; color:#009fa8;}
+.leftProductNav li ul{display:block; padding:10px;}
+.subban{display:block; margin-bottom:12px}
+/*---------------*/
+.subRight{background:url(images/subRightBg.png) no-repeat 0 top; width:737px; float:right}
+.subRight h2{height:26px; line-height:26px; font-weight:normal; padding-top:3px; margin-bottom:15px}
+.subRight h2 span{font-size:13px; display:block; float:left; width:200px; background:url(images/ico-1.png) no-repeat 11px center; padding-left:34px; font-family:"Arial"; color:#616160}
+.subRight .mbx{float:right; font-size:12px;color:#7d7d7d; padding-right:20px;font-family:"宋体";}.subRight .mbx a,.subRight .mbx strong{font-family:"arial";}.mbx a{color:#7d7d7d}
+/*----------------*/
+.footer{width:982px; height:34px; background:url(images/footBg.gif) repeat-x; margin:0 auto; line-height:34px; color:#959595; clear:both}
+.footer a{color:#959595}
+.footer a:hover{color:#009fa8}
+.footLeft{width: 450px; float:left; padding-left:18px}
+.footRight{width:450px; float:right; text-align:right; padding-right:25px}
+/*--------------*/
+.submenu{ height:20px; line-height:20px; clear:both; text-align:center; margin:40px 0;color:#7d7d7d;}
+.submenu a,.submenu span{margin-right:10px; color:#7d7d7d}
+.submenu .text{width:22px; height:14px; line-height:22px; border:1px solid #c0c0c0; text-align:center; vertical-align:middle; margin:0 2px}
+.submenu .butGo{background:url(images/butGo2.gif) no-repeat; border:0; width:25px; height:16px; vertical-align:middle}
+/*--------------*/
+.subRight a{color:#72716F;}
+.subRight a:hover{text-decoration:none;color:#009FA8;}
+
+.submenu a{text-decoration:none;padding:0 14px;*padding:0 7px;height:24px;line-height:24px;}
+.submenu a:hover{font-weight:bold;color:#009fa8;}
+.submenu a{
+	display:block;
+	width:61px;
+	float:left;
+	padding:0px;
+}
+.submenu span{
+	display:block;
+	float:left;
+	margin-top:2px;
+}
+.submenu b{
+	display:block;
+	float:left;
+	margin-top:2px;
+}
+.submenu span b{
+	float:none;
+	margin-top:0px;
+	margin-left:0px;
+	display:inline;	
+}
+#pages{
+	padding-left:105px;	
+}
+.submenu{
+	    margin:30px 0;
+}
+.newsTop b a:hover,.newsList ul li a:hover{color:#009fa8;}
+.subRight a#newsa{color:#72716F;}
