@@ -1,211 +1,828 @@
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Edan Instruments, Inc.</title>
-    <meta name="description" content="Edan Instruments, Inc.">
-    <meta name="keywords" content="Edan Instruments, Inc.">
-    <link href="templates/libang/en/style/index.css" rel="stylesheet" type="text/css">
-    <link href="templates/libang/en/style/common.css" rel="stylesheet" type="text/css">
-    <link href="templates/libang/en/style/jquery.slideBox.css" rel="stylesheet" type="text/css">
-
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="bookmark" href="favicon.ico">
-    <script src="templates/libang/en/scripts/jquery-1.7.1.min.js"></script>
-    <style></style>
-    <!--script src="/templates/libang/en/scripts/slide.js"></script-->
-    <script src="templates/libang/en/scripts/jquery.jcarousel.js"></script>
-    <script src="templates/libang/en/scripts/common.js"></script>
-    <script src="templates/libang/en/scripts/jquery.slideBox.min.js"></script>
-    <!--[if IE 6]>
-	<script type="text/javascript" src="/templates/libang/en/scripts/DD_belatedPNG_0.0.8a-min.js"></script>
-	<script type="text/javascript">
-	DD_belatedPNG.fix('*');
-	</script>
-<![endif]-->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>Edan | UK</title>
+    <meta name="keywords" content="Edan, OBGYN, In-Vitro Diagnostics, Patient Monitor, Ultrasound, ECG, Medical Devices, Healthcare">
+    <meta name="description" content="As a healthcare company, Edan dedicates to provide phenomenal medical devices and healthcare solutions to the world. Seen value-driven and innovative as the core value, Edan’s investment in R&amp;D has exceeded 20% of the revenue in the past three years. Till now, Edan offers more than 100 products and medical solutions under multiple product lines, including Ultrasound, Patient Monitoring, In-Vitro Diagnostics, Point-of-Care Testing, Diagnostic ECG, OBGYN, and Intelligence Healthcare.">
+    <meta name="Author" content="沙漠风设计制作www.szweb.cn"> 
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/layout.css">
+    <script src="assets/hm.js"></script><script type="text/javascript" src="assets/jquery_002.js"></script>
+    <script type="text/javascript" src="assets/swiper.js"></script>
+    <script type="text/javascript" src="assets/wow.js"></script>
+    <script type="text/javascript" src="assets/TweenMax.js"></script>
+    <script type="text/javascript" src="assets/jquery.js"></script>
+    <!--统计-->
     <script>
-        jQuery(function ($) {
-
-
-            $('#swBanner').slideBox({
-
-                duration: 0.8,//滚动持续时间，单位：秒
-
-                easing: 'linear',//swing,linear//滚动特效
-
-                delay: 12,//滚动延迟时间，单位：秒
-
-                hideClickBar: false,//不自动隐藏点选按键
-
-                clickBarRadius: 10
-            });
-
-
-            var initValue = 'FTS-6';
-            $("#keyword").attr("value", "FTS-6").css({ color: '#7B7B7B' }).focus(function () {
-                var value = $(this).val();
-                if (value = initValue)
-                { $(this).val(""); }
-                $(this).css({ color: '#000' });
-            }).blur(function () {
-                var value2 = $(this).val();
-                if (value2.length == 0) {
-                    $(this).val(initValue);
-                    $(this).css({ color: '#7B7B7B' });
-                }
-            });
-
-            $('#ul').find('li').each(function () {
-                var li = $(this).find('a');
-                var value = li.text();
-                if (value.length > 37)
-                    li.text(value.substring(0, 37) + '...');
-                else
-                    li.text(value);
-            }
-            );
-
-        });
-
-    </script>
-
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="top">
-                <a href="index.html" class="logo"><img src="templates/libang/en/style/images/logo.png"></a>
-            </div>
-            <!-- top -->
-            <div class="nav">
-
-                <ul class="jsddm" id="jsddm" onclick="jsddm_cluk()">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="http://www.edan.com.cn/html/EN/Company/milestones/" onclick="alert('you are now being redirected to edan.cn');">Company</a>
-                        <ul>
-                            <li><a href="http://www.edan.com.cn/html/EN/Company/about/" onclick="alert('you are now being redirected to edan.cn');">About Edan</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/Company/milestones/" onclick="alert('you are now being redirected to edan.cn');">Milestones</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/Company/vision/" onclick="alert('you are now being redirected to edan.cn');">Vision</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/Company/quality/" onclick="alert('you are now being redirected to edan.cn');">Quality Commitment</a></li>
-                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://www.edan.com.cn/html/EN/news/companynews/" onclick="alert('you are now being redirected to edan.cn');">News Center</a>
-                        <ul>
-                            <li><a href="http://www.edan.com.cn/html/EN/news/companynews/" onclick="alert('you are now being redirected to edan.cn');">News Release</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/" onclick="alert('you are now being redirected to edan.cn');">Exhibitions &amp; Event</a></li>
-                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://www.edan.com.cn/html/EN/products/ECG/" onclick="alert('you are now being redirected to edan.cn');">Products</a>
-                        <ul>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/ECG/" onclick="alert('you are now being redirected to edan.cn');">Diagnostic ECG</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/patientmonitoring/" onclick="alert('you are now being redirected to edan.cn');">Patient Monitoring</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/OBGYN/" onclick="alert('you are now being redirected to edan.cn');">OB &amp; GYN</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/ultrasound/" onclick="alert('you are now being redirected to edan.cn');">Ultrasound Imaging</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/IVD/" onclick="alert('you are now being redirected to edan.cn');">In-Vitro Diagnostics</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/products/POCT/" onclick="alert('you are now being redirected to edan.cn');">Point-of-Care Testing</a></li>
-                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact us</a>
-                        <ul>
-                            <li><a href="contact.html">Contact Information</a></li>
-                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Group Members</a>
-                        <ul>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Laboratory</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Edan Diagnostics, Inc.</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN/" onclick="alert('you are now being redirected to edan.cn');">Edan Medical</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Instruments GmbH</a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Medical India </a></li>
-                            <li><a href="http://www.edan.com.cn/html/EN/GroupMembersEN" onclick="alert('you are now being redirected to edan.cn');">Edan Medical Ltd. </a></li>
-                            <li style="background: url(templates/libang/en/style/images/navulBg-bottom.png) no-repeat; width: 195px; height: 10px"></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            <!-- nav -->
-        </div>
-        <!-- header end -->
-        <div id="swBanner" class="slideBox" style="width: 1920px; height: 408px;">
-            <ul class="items" style="width: 9600px; left: -1920px;">
-                <li class="active" style="width: 1920px; height: 408px;"><a href="" title="2.jpg "><img src="http://www.edan.com.cn/UploadFiles/2017/11/W14174307661505BF.jpg"></a></li>
-                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html" title="SD1" onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/10/W312020574F2323B8.jpg"></a></li>
-                <li class="" style="width: 1920px; height: 408px;"><a href="" title="H50"><img src="http://www.edan.com.cn/UploadFiles/2017/09/W0511250924B6A928.jpg" ></a></li>
-                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/news/companynews/201612/122457.html" title="AX8" onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/07/W27173330911622B6.jpg"></a></li>
-                <li class="" style="width: 1920px; height: 408px;"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/Fetal%20Telemetry%20System/201703/292482.html" title="FTS-6.jpg " onclick="alert('you are now being redirected to edan.cn');"><img src="http://www.edan.com.cn/UploadFiles/2017/03/W290950005A579F30.jpg"></a></li>
-            </ul>
-            <div class="tips" style="opacity: 0.6;">
-                <div class="title"><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html"  onclick="alert('you are now being redirected to edan.cn');">SD1</a></div>
-                <div class="nums" style=""><a href="" class="" style="border-radius: 10px;">2.jpg </a><a href="http://www.edan.com.cn/html/EN/products/OBGYN/UltrasonicDoppler/201710/312806.html"
-                        style="border-radius: 10px;" class="active"  onclick="alert('you are now being redirected to edan.cn');">SD1</a><a href="" style="border-radius: 10px;" class="">H50</a>
-                    <a href="http://www.edan.com.cn/html/EN/news/companynews/201612/122457.html" style="border-radius: 10px;" class=""  onclick="alert('you are now being redirected to edan.cn');">AX8</a>
-                    <a
-                        href="http://www.edan.com.cn/html/EN/products/OBGYN/Fetal%20Telemetry%20System/201703/292482.html" style="border-radius: 10px;"
-                        class=""  onclick="alert('you are now being redirected to edan.cn');">FTS-6.jpg </a>
-                </div>
-            </div>
-        </div>
-        <!-- banner end -->
-        <div class="main">
-            <div class="content">
-                <div class="mLeft mbox">
-                    <h3>News Center</h3>
-                    <ul id="ul">
-                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201711/172836.html" onclick="alert('you are now being redirected to edan.cn');">Edan’s acquisition of Sulis</a>
-                            <!--span>2017-11-17</span-->
-                        </li>
-                        <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/201711/092832.html" onclick="alert('you are now being redirected to edan.cn');">Please visit us at Medica 2017</a>
-                            <!--span>2017-11-09</span-->
-                        </li>
-                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201710/312805.html" onclick="alert('you are now being redirected to edan.cn');">New Release of SD1 Ultrasonic Pocket ...</a>
-                            <!--span>2017-10-31</span-->
-                        </li>
-                        <li><a href="http://www.edan.com.cn/html/EN/news/companynews/201709/072756.html" onclick="alert('you are now being redirected to edan.cn');">EDAN in ESC 2017</a>
-                            <!--span>2017-09-07</span-->
-                        </li>
-                        <li><a href="http://www.edan.com.cn/html/EN/news/exhibitionsevent/201709/072755.html" onclick="alert('you are now being redirected to edan.cn');">Please visit us at Hospital Expo 2017</a>
-                            <!--span>2017-09-07</span-->
-                        </li>
-                    </ul>
-                </div>
-                <div class="mCenter mbox" style="background:url(templates/libang/en/style/images/centBg2.gif) no-repeat; width: 344px;">
-                    <h3>Edan Medical (UK) Limited</h3>
-                    <p>Welcome to Edan Medical (UK) Limited, previously Sulis Healthcare Products, Ltd.</p>    
-                </div>
-				
-                <div class="mRight mbox">
-					<h3>Sulis Healthcare Products Acquisition</h3>
-					<img src="templates/libang/en/style/images/sulis.jpg"/ width="70%" style="margin-left: 50px;">
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <!-- main end -->
-        <div class="footer">
-            <div class="footLeft">
-                <a href="http://www.edan.com.cn/html/EN/enedan/termsofuse/" onclick="alert('you are now being redirected to edan.cn');">Terms of Use </a>&nbsp;|&nbsp;
-                <a href="contact.html">Contact </a>&nbsp;
-                <!--ignore for now-->
-                <!--<a href="html/EN/enedan/SiteMap/">Site Map</a>-->
-            </div>
-            <div class="footRight">© 2005-2012 Edan Instruments, Inc.&nbsp;&nbsp;
-            </div>
-            <!-- footer end -->
-
-        </div>
-</body>
-
-
-</html>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?83e78da06ea90e0e8e223cf48d3edabb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
-</div>
-</div>
-</div>
-</body>
 
-</html>
+<script>
+        $(function () {
+            //中文路径
+            var url = "https://www.edan.com.cn";
+            //获取网页的来路
+            var referrer = document.referrer;
+            //来路是英文，增加版本通过||增加
+            if (referrer.indexOf(url) > -1) {
+                Cookie_Set("look", "zh", "d1");
+            }
+            var bl = navigator.browserLanguage == undefined ? navigator.language.substring(0, 2).toLowerCase() : navigator.browserLanguage.substring(0, 2).toLowerCase();
+            var look = Cookie_Get("look");
+            //浏览器语言是中文版，并且来路是中文版，说明是用户手动切换到中文版的，不做任何处理
+            if (look == "zh") {
+            } else if (bl == "zh") {
+                //没有来路，并且浏览器语言是英文版，那就跳到英文版
+                window.location.href = url;
+            }
+        });
+        function Cookie_Set(name, val, time) {
+            var strsec = getsec(time);
+            var exp = new Date();
+            exp.setTime(exp.getTime() + strsec * 1);
+            document.cookie = name + "=" + val + ";expires=" + exp.toGMTString() + ";path=/";
+        }
+        function Cookie_Get(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg)) {
+                return (arr[2]);
+            } else {
+                return null;
+            }
+        }
+        function getsec(str) {
+            var str1 = str.substring(1, str.length) * 1;
+            var str2 = str.substring(0, 1);
+            if (str2 == "s") {
+                return str1 * 1000;
+            } else if (str2 == "h") {
+                return str1 * 60 * 60 * 1000;
+            } else if (str2 == "d") {
+                return str1 * 24 * 60 * 60 * 1000;
+            }
+        }
+    </script><script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=439379"></script></head>
+<body>
+ <!-- inheader 头部 start -->
+<header class="inheader clearfix">
+
+    <div class="inlogo fl">
+        <a href="https://www.edan.com/index.html">
+            <img src="assets/inlogo.png" alt="Edan">
+        </a>
+    </div>
+
+    <ul class="innav-ul clearfix">
+        
+        <li class="cur">
+            <h3> <a class="innav-a" href="https://www.edan.com/index.html">Home</a><span class="innav-span"></span></h3>
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/about/">About Us</a><span class="innav-span"></span>
+            </h3>
+            
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/product/ecg/">Products</a><span class="innav-span"></span>
+            </h3>
+            
+            <div class="innav-menu">
+                
+                <a href="https://www.edan.com/product/ecg/">ECG</a>
+                
+                <a href="https://www.edan.com/product/patient/">Patient Monitoring</a>
+                
+                <a href="https://www.edan.com/product/ob/">OB &amp; GYN</a>
+                
+                <a href="https://www.edan.com/product/ultrasound/">Ultrasound</a>
+                
+                <a href="https://www.edan.com/product/ivd/">IVD</a>
+                
+                <a href="https://www.edan.com/product/poct/">POCT</a>
+                
+                <a href="https://www.edan.com/product/veterinary/">Veterinary</a>
+                
+            </div>
+            
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/Service/">Services</a><span class="innav-span"></span>
+            </h3>
+            
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/news/company/">News Center</a><span class="innav-span"></span>
+            </h3>
+            
+            <div class="innav-menu">
+                
+                <a href="https://www.edan.com/news/company/">Company News</a>
+                
+                <a href="https://www.edan.com/news/Information/">Exhibitions &amp; Events</a>
+                
+                <a href="https://www.edan.com/news/company101/">COVID-19</a>
+                
+            </div>
+            
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/join/">Join Us</a><span class="innav-span"></span>
+            </h3>
+            
+        </li>
+        
+        <li class="">
+            <h3>
+                <a class="innav-a" href="https://www.edan.com/company/">Group Members</a><span class="innav-span"></span>
+            </h3>
+            
+        </li>
+        
+    <div class="line" style="left: 30px; width: 48px;"></div></ul>
+
+    <!-- mobile-btn 移动端导航 start -->
+    <div class="mobile-btn fr">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- mobile-btn 移动端导航 end -->
+
+    <div class="inheader-right fr">
+
+        <a href="javascript:;" class="insearch">
+            <img src="assets/insearch-btn.png" alt="">
+            <div class="insearch-form">
+                <form name="topformBySearch" data-children-count="1">
+                    <input type="text" placeholder="Search..." name="tbtopSearchKeyword" class="insearch-intxt">
+                    <input type="submit" value="" class="insearch-insub">
+                </form>
+            </div>
+        </a>
+
+        <div class="in-en">
+            <a href="javascript:;" class="in-ena">ENG</a>
+            <div class="inen-view">
+                <a href="https://www.edan.com.cn/" target="_blank">CHN</a>
+                <a href="https://www.edan.com/" target="_blank">ENG</a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+<!-- inheader 头部 end -->
+<script>
+     $(function () {
+        $("[name='topformBySearch']").submit(function () {
+            var keywords = $("[name='tbtopSearchKeyword']").val();
+            if (keywords == "") {
+                layer.msg("Please input keywords!", 1, 8);
+                return false;
+            }
+            if (!CheckInput(keywords)) {
+                layer.msg("Keywords contain special characters, please re-enter!", 1, 8);
+                return false;
+            }
+            window.location.href = "/search/index.html?keyword=" + escape(keywords);
+            return false;
+        });
+    })
+
+    function CheckInput(obj) {
+        var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]")
+        if (pattern.test(obj)) {
+            return false;
+        }
+        return true;
+    }
+</script><!-- cookies-box start -->
+<div class="cookies-btm">
+    <div class="cookies-btmcon">
+        <a href="javascript:;" class="cookies-btmclose"><span></span></a>
+
+        <div class="cookies-btmtext">
+            We use cookies to ensure that we give you the best experience on our website.
+        </div>
+
+        <div class="cookies-btmbtn">
+            <a href="javascript:;" class="cookies-btnyes">Accept</a>
+            <a href="javascript:;" class="cookies-btnmore">More Info</a>
+        </div>
+    </div>
+</div>
+
+<div class="cookies-box">
+    <div class="cookies-boxcon">
+        
+        <a class="cookies-tclose" href="javascript:;"><span></span></a>
+        <h1 class="cookies-tit">Cookies Notice</h1>
+
+        <div class="cookies-boxtext">
+            <p><b>WHAT IS COOKIE?</b><o:p></o:p></p><p>A cookie is a 
+small piece of text that allows a website to recognize your device and 
+maintain a consistent, cohesive experience throughout multiple sessions.
+ If you visit EDAN pages, both EDAN and third parties will use cookies 
+to track and monitor some of your activities, and store and access some 
+data about you, your browsing history, and your usage of the EDAN pages.<o:p></o:p></p><p><br></p><p></p><p><b>HOW DOES EDAN USE COOKIES?</b><b><u1:p></u1:p></b><o:p></o:p></p><p>This
+ policy describes how both EDAN and other third parties use cookies and 
+how you can exercise a greater degree of control over cookies. Please 
+keep in mind that this may alter your experience with our website, and 
+may limit certain features.<o:p></o:p></p><p><br></p><p><strong>General Browsing:</strong>
+ We use cookies that are important for certain technical features of our
+ website, like implementing fixes and improvements to our platform.</p><p>These cookies:</p><p>&nbsp;&nbsp;&nbsp;&nbsp;-
+ Enable behavior in our Products or Services that is tailored to the 
+activity or preferences of a person visiting our properties</p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Allow users to opt out of certain types of modeling or personalization in our products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Collect information on our users’ preferences in order to create more useful products</p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Maintain the regular business operations of our Advertising and Marketing departments</p><p>&nbsp;&nbsp;&nbsp;&nbsp;-
+ Help to diagnose and correct downtime, bugs, and errors in our code to 
+ensure that our products are operating efficiently</p><p></p><p><b><br></b></p><p><b>Analytics:</b><b>&nbsp;</b>We
+ use cookies to compile usage activity in order to better cater our 
+Products and Services offerings to you, and to third parties. We DO NOT 
+share identifiable “raw” data with our clients or any third parties, 
+however we do make high-level decisions based on aggregated data about 
+your usage of our Products and Services.<br></p><p><br></p><p>These cookies:<u1:p></u1:p><o:p></o:p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Monitor site traffic and behavior flows of users<u1:p></u1:p><o:p></o:p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Measure the effectiveness of products<u1:p></u1:p><o:p></o:p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Measure the effectiveness of off-site marketing campaigns and tactics</p><p></p><p></p><p></p><p><b><br></b></p><p><b>WHAT INFORMATION IS COLLECTED ON ME VIA COOKIES?</b><b><u1:p></u1:p></b><o:p></o:p></p><p>In
+ general, we collect most data from you via form submission. However, 
+there are cases when visiting our site and/or using our platforms in 
+which we may receive certain information through the use of cookies. 
+This data will generally not include personally identifying information 
+about you.<u1:p></u1:p><o:p></o:p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;- Unique identification tokens<u1:p></u1:p><o:p></o:p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;- User preferences such as favorite tags (for anonymous users only)<o:p></o:p></p><p><br></p><p>Third Party Cookies<o:p></o:p></p><p>The
+ use of cookies, the names of cookies, and other cookies related cookies
+ technology may change over time and EDAN will make all reasonable 
+efforts to notify you by updating our cookies table where material 
+changes occur and from time-to-time.</p><p><b><br></b></p><p><b>HOW DO I RESTRICT COOKIES?</b><b><u1:p></u1:p></b><o:p></o:p></p><p>If
+ you don’t want EDAN to use cookies when you visit EDAN home pages, you 
+can opt-out of certain cookie related processing activities when you 
+visit the pages. If you opt-out of cookies, we have to set a cookie to 
+tell us that. Please note that EDAN may not work properly and you may 
+have diminished functionality if you opt-out of certain cookies.If you 
+decide that you do not want cookies to be set on your device by our 
+third-party Partners, you can adjust the settings on your internet 
+browser and choose from the available Cookies setting to best meet your 
+preferences. While setting options may vary from browser to browser, you
+ can generally choose to reject some or all cookies, or instead to 
+receive a notification when a cookie is being placed on your device. For
+ more information, please refer to the user help information for your 
+browser of choice. Please keep in mind that cookies may be required for 
+certain functionalities, and by blocking these cookies, you may limit 
+your access to certain parts or features of our sites.&nbsp;You can 
+manually delete the cookies at any time.</p><p></p>
+        </div>
+
+        <div class="cookies-btn">
+            <a href="javascript:;" class="cookies-accept">Accept</a>
+            <a href="javascript:;" class="cookies-close">Close</a>
+        </div>
+    </div>
+</div>
+<!-- cookies-box end --><!-- edition 版本切换 start -->
+<!-- data-lang当前语言版本 英文站en，中文站zh -->
+<div class="edition" data-lang="zh">
+    <div class="edition-con">
+        <div class="edition-text">选择另一个国家或地区，以获得适用于你所在位置的内容和在线购物选项。</div>
+
+        <div class="edition-view">
+            <!-- cn.png中文图标  en.png英文图标 -->
+            <div class="edition-message"><img src="assets/cn.png" alt=""> <span>中文</span></div>
+
+            <a href="javascript:;" class="edition-a">继续</a>
+        </div>
+        <a href="javascript:;" class="edition-close"><span></span></a>
+    </div>
+</div>
+<!-- edition 版本切换 end --> 
+
+    <!-- inbanner 内页banner start -->
+	<div class="inbanner swiper-containner swiper-container-horizontal">
+         
+		<div class="swiper-wrapper" style="transform: translate3d(-5300px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="5" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191231114231_891661.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					
+				</div>
+			</div>
+            
+            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20200206033051_362361.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<h2></h2><a href="https://www.edan.com/news/company101/" class="inbanner-a1">Explore more</a>
+				</div>
+			</div>
+                
+            <div class="swiper-slide" data-swiper-slide-index="1" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191111015949_258955.jpg" alt="Banner1"></a>
+				<div class="inbanner-txt1 fontHL before">
+					<h2>A world of potential</h2><a href="https://www.edan.com/about/" class="inbanner-a1">Explore more</a>
+				</div>
+			</div>
+                
+            <div class="swiper-slide" data-swiper-slide-index="2" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191231113801_895565.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					
+				</div>
+			</div>
+                
+            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="3" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191231035652_712934.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					
+				</div>
+			</div>
+                
+            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="4" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191231114210_416083.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before after">
+					
+				</div>
+			</div>
+                
+            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="5" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20191231114231_891661.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					
+				</div>
+			</div>
+                
+			
+		<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1060px;">
+				<a href="javascript:;"><img src="assets/20200206033051_362361.jpg" alt="Banner2"></a>
+				<div class="inbanner-txt1 fontHL before">
+					<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<p>
+    <o:p>
+        &nbsp;
+    </o:p>
+</p>
+<h2></h2><a href="https://www.edan.com/news/company101/" class="inbanner-a1">Explore more</a>
+				</div>
+			</div></div>
+
+		<div class="inbanner-bat swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+	</div>
+	<!-- inbanner 内页banner end -->
+    	<!-- inpro-one 产品 start -->
+	<div class="inpro-one">
+		<div class="commonweb">
+			<div class="inpro-oneview clearfix">
+                
+				<h2 class="inpro-tit fontHM wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Product Series</h2>
+                  
+				<div class="inpro-oneul">
+                    <ul>
+                        
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/ecg/">
+							<div class="inpro-oneicon">
+								<img src="assets/products-icon1.jpg" alt="Diagnostic ECG">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Diagnostic ECG</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/patient/">
+							<div class="inpro-oneicon">
+								<img src="assets/20191108035750_633938.png" alt="Patient Monitoring">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Patient Monitoring</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/ob/">
+							<div class="inpro-oneicon">
+								<img src="assets/20191108035800_212117.png" alt="Obstetrics &amp; Gynecology">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Obstetrics &amp; Gynecology</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/ultrasound/">
+							<div class="inpro-oneicon">
+								<img src="assets/products-icon4.jpg" alt="Ultrasound Imaging">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Ultrasound Imaging</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/ivd/">
+							<div class="inpro-oneicon">
+								<img src="assets/products-icon5.jpg" alt="In-Vitro Diagnostics">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>In-Vitro Diagnostics</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/poct/">
+							<div class="inpro-oneicon">
+								<img src="assets/20191108035810_040204.png" alt="Point-of-Care Testing">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Point-of-Care Testing</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        <li class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+						<a href="https://www.edan.com/product/veterinary/">
+							<div class="inpro-oneicon">
+								<img src="assets/products-icon7.png" alt="Veterinary">
+							</div>
+							<div class="inpro-onelitxt">
+								<h3>Veterinary</h3>
+							</div>
+						</a>
+					</li>
+                           
+                        </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- inpro-one 产品 end -->
+
+	<!-- inabout-one 关于我们 start -->
+	<div class="inabout-one">
+		<!-- 图片提供视频高度 -->
+         
+		<div class="inabout-view">
+			<img src="assets/inabout1.jpg" alt="">
+			<div class="inabout-video">
+				<video src="assets/20191031034631_643805.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" x5-video-player-type="h5" x5-vsideo-player-fullscreen="true" x5-video-orientation="portraint" type="video/mp4" style="object-fit: fill;"></video>
+			</div>
+		</div>
+
+		<div class="inabout-text">
+			<h3 class="inabout-texth3">About Edan</h3>
+
+			<div class="inabout-textdes fontHL">
+				<div class="inabout-textdes2">
+					EDAN is a healthcare company dedicated to improving the human 
+condition around the world by delivering value-driven, innovative and 
+high-quality medical products and services.
+				</div>
+			</div>
+			<img class="inabout-btmimg" src="assets/inabout-btmimg.png" alt="">
+		</div>
+	</div>
+	<!-- inabout-one 关于我们 end -->
+
+	<!-- innews 新闻 start -->
+	<div class="innews">
+		<div class="commonweb">
+			<ul class="innews-ul fontHL">
+                
+                <li>
+					<a href="https://www.edan.com/news/company/44.html">
+						<div class="innews-img">
+							<img src="assets/20200205013513_968807.jpg" alt="A Letter from EDAN International Division Team">
+						</div>
+
+						<div class="innews-text">
+							<h3 class="innews-h3">A Letter from EDAN International Division Team</h3>
+							<div class="innews-des">
+                                Inquiries towards the ongoing novel 
+coronavirus and the current status of EDAN becomes spiral. Combating the
+ outbreak, EDAN made a complete deployment during the Chinese New Year 
+holiday. Strict precautionary measures are taken to ensure that the 
+safety of our employees and production is the top priority as always.
+							</div>
+							<div class="innews-time"> 05 February 2020</div>
+						</div>
+					</a>
+				</li>
+                   
+                <li>
+					<a href="https://www.edan.com/news/company/41.html">
+						<div class="innews-img">
+							<img src="assets/20200205092137_559613.jpg" alt="Over 10,000 Medical Devices Dispatched Accommodating Coronavirus Designated Hospitals">
+						</div>
+
+						<div class="innews-text">
+							<h3 class="innews-h3">Over 10,000 Medical Devices Dispatched Accommodating Coronavirus Designated Hospitals</h3>
+							<div class="innews-des">
+                                Pneumonia patients of unknown causes 
+appeared in Wuhan, China in December 2019, later identified as the novel
+ coronavirus, named 2019-nCoV. It quickly became an epidemic and a buzz 
+topic worldwide. As a healthcare company, EDAN quickly responds to the 
+situation and made a complete deployment during the Chinese New Year 
+holiday.
+							</div>
+							<div class="innews-time"> 04 February 2020</div>
+						</div>
+					</a>
+				</li>
+                   
+                <li>
+					<a href="https://www.edan.com/news/company/39.html">
+						<div class="innews-img">
+							<img src="assets/20200128125324_557676.jpg" alt="EDAN Brings Its Intelligent Diagnostic Solutions to Arab Health 2020">
+						</div>
+
+						<div class="innews-text">
+							<h3 class="innews-h3">EDAN Brings Its Intelligent Diagnostic Solutions to Arab Health 2020</h3>
+							<div class="innews-des">
+                                EDAN Instruments, Inc. unveiled its 
+next-generation diagnostic ultrasound system Acclarix LX9 at Arab Health
+ 2020, the largest healthcare exhibition in the Middle East, making EDAN
+ a headliner among the exhibitors in the Imaging &amp; Diagnostic 
+sector.
+							</div>
+							<div class="innews-time"> 28 January 2020</div>
+						</div>
+					</a>
+				</li>
+                   
+			</ul>
+		</div>
+	</div>
+	<!-- innews 新闻 end -->
+
+
+ <footer class="neifoot neifooter">
+    <div class="infoot-top clearfix">
+
+        <div class="infoot-topview clearfix" style="height: 338px;">
+            
+            <dl class="infoot-topdl" style="top: 0px; left: 0px;">
+                <dt>
+                    <a class="infoot-a" href="https://www.edan.com/about/">About Us</a><span class="infoot-span"></span>
+                </dt>
+                
+            </dl>
+            
+            <dl class="infoot-topdl" style="top: 0px; left: 210px;">
+                <dt>
+                    <a class="infoot-a" href="https://www.edan.com/product/ecg/">Products</a><span class="infoot-span"></span>
+                </dt>
+                
+                <dd>
+                    
+                    <a href="https://www.edan.com/product/ecg/">ECG</a>
+                    
+                    <a href="https://www.edan.com/product/patient/">Patient Monitoring</a>
+                    
+                    <a href="https://www.edan.com/product/ob/">OB &amp; GYN</a>
+                    
+                    <a href="https://www.edan.com/product/ultrasound/">Ultrasound</a>
+                    
+                    <a href="https://www.edan.com/product/ivd/">IVD</a>
+                    
+                    <a href="https://www.edan.com/product/poct/">POCT</a>
+                    
+                    <a href="https://www.edan.com/product/veterinary/">Veterinary</a>
+                    
+                </dd>
+                
+            </dl>
+            
+            <dl class="infoot-topdl" style="top: 0px; left: 420px;">
+                <dt>
+                    <a class="infoot-a" href="https://www.edan.com/Service/">Services</a><span class="infoot-span"></span>
+                </dt>
+                
+            </dl>
+            
+            <dl class="infoot-topdl" style="top: 58px; left: 0px;">
+                <dt>
+                    <a class="infoot-a" href="https://www.edan.com/news/company/">News Center</a><span class="infoot-span"></span>
+                </dt>
+                
+                <dd>
+                    
+                    <a href="https://www.edan.com/news/company/">Company News</a>
+                    
+                    <a href="https://www.edan.com/news/Information/">Exhibitions &amp; Events</a>
+                    
+                    <a href="https://www.edan.com/news/company101/">COVID-19</a>
+                    
+                </dd>
+                
+            </dl>
+            
+            <dl class="infoot-topdl" style="top: 58px; left: 420px;">
+                <dt>
+                    <a class="infoot-a" href="https://www.edan.com/join/">Join Us</a><span class="infoot-span"></span>
+                </dt>
+                
+            </dl>
+            
+        </div>
+
+        <div class="infoot-fr">
+            
+            <h2>Contact Us</h2>
+
+            <ul class="infoot-frul">
+                <li>No.15 Jinhui Rd., Shenzhen, 518122, P.R.China</li>
+                <li>+86-755-26898326</li>
+                <li>info@edan.com</li>
+                <li>+86-755-26898330</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="infoot-btm clearfix neifoot-btm">
+        <div class="infoot-bfl">
+            ©2018EDAN仪器有限公司
+        </div>
+
+        <div class="infoot-bfr">
+            <a class="infoot-a1" href="https://www.edan.com/cookies/">Cookies Notice</a>|
+            <a class="infoot-a1" href="https://www.edan.com/privacy/">Privacy Notice</a>|<a class="infoot-a1" href="https://www.edan.com/term/">Term of Use</a>
+            <div class="infoot-fen">
+               
+                <a href="https://www.facebook.com/EDANInstrumentsInc" target="_blank" rel="nofollow"><img src="assets/infoot-a5.png" alt="Facebook"></a>
+                
+                <a href="https://www.youtube.com/channel/UCugG01IxCyG2b40XiAtHyAA" target="_blank" rel="nofollow"><img src="assets/20191031015152_893806.png" alt="YouTube"></a>
+                
+            </div>
+        </div>
+    </div>
+</footer> <script type="text/javascript" src="assets/layout.js"></script>
+
+
+</body></html>
