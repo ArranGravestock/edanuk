@@ -329,7 +329,7 @@ body.active { padding-top: 60px; }
 
 .infoot-frul { width: 100%; padding-top: 0px; }
 
-.infoot-frul li { width: 100%; padding-left: 30px; margin-bottom: 10px; line-height: 20px; font-size: 14px; color: #999; background-repeat: no-repeat; background-position: left 3px; }
+.infoot-frul li { width: 100%; margin-bottom: 10px; line-height: 20px; font-size: 14px; color: #999; background-repeat: no-repeat; background-position: left 3px; }
 
 .infoot-frul li:nth-child(1) { background-image: url(../images/adr.png); }
 
