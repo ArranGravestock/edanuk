@@ -329,15 +329,16 @@ body.active { padding-top: 60px; }
 
 .infoot-frul { width: 100%; padding-top: 0px; }
 
-.infoot-frul li { width: 100%; margin-bottom: 10px; line-height: 20px; font-size: 14px; color: #999; background-repeat: no-repeat; background-position: left 3px; }
 
-.infoot-frul li:nth-child(1) { background-image: url(../images/adr.png); }
+.infoot-frul li { padding-left: 30px; width: 100%; margin-bottom: 10px; line-height: 20px; font-size: 14px; color: #999; background-repeat: no-repeat; background-position: left 3px; }
 
-.infoot-frul li:nth-child(2) { background-image: url(../images/tel.png); }
+.infoot-frul li:nth-child(1) { font-weight: 700; padding-left: 0; }
 
-.infoot-frul li:nth-child(3) { background-image: url(../images/mess.png); }
+.infoot-frul li:nth-child(3) { background-image: url(../assets/adr.png); }
 
-.infoot-frul li:nth-child(4) { background-image: url(../images/fax.png); }
+.infoot-frul li:nth-child(5) { background-image: url(../assets/tel.png); }
+
+.infoot-frul li:nth-child(6) { background-image: url(../assets/mess.png); }
 
 .infoot-btm { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0px 0 20px; color: #999; }
 
