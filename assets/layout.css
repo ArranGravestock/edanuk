@@ -1663,7 +1663,7 @@ body.active { padding-top: 60px; }
   .network-liv .network-lii { position: absolute; top: 0; left: 100%; white-space: nowrap; }
   .network-item { display: none; position: absolute; right: 0%; top: 0; z-index: 15; width: 30%; padding: 6.5% 1.66667% 0; height: 100%; background: #454444; overflow: hidden; }
   .netsolution-twotop { padding: 0 40px; }
-  .netsolution-twotop .swiper-slide { width: 16.66667%; }
+  .netsolution-twotop .swiper-slide { width: 18%; }
   .netsolution-itemtit { float: left; width: 45.41667%; }
   .netsolution-itemtit h3 { margin-bottom: 10px; line-height: 27px; font-size: 22px; }
   .netsolution-itemtit h4 { line-height: 26px; font-size: 20px; }
