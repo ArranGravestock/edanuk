@@ -931,7 +931,6 @@ lasthe();
 			}
 		});
 		$('.suzy-conview2 .swiper-slide').height(lh);
-		console.log(lh);
 	}
 
 
@@ -1065,7 +1064,6 @@ lasthe();
                 } else {  //放置在其他行的item        
                     var min_index = findMinIndex(items_height);  //寻找最小高度
                     if(min_index == -1) {
-                        console.log("高度计算出现错误");
                         return ;
                     }
                     items.eq(i).css("top", items_height[min_index] + margin);
@@ -1099,3 +1097,10 @@ window._bd_share_config = {
 with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
 	'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)
 ];
+
+$(window).bind('beforeunload', function(e){
+    console.log(e.target.activeElement.href);
+    if(e.target && e.target.activeElement && e.target.activeElement.href && e.target.activeElement.href.includes('edan.com')) {
+        return 'You are leaving to visit the Edan China, are you sure you want to leave?';
+    }
+  });
