@@ -1266,7 +1266,8 @@ body.active { padding-top: 60px; }
 
 .inbanner .swiper-slide img { width: 100%; }
 
-.inbanner-txt1 { position: absolute; top: 50%; left: 50%; z-index: 5; width: 90%; text-align: center; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.inbanner-txt1 { height: 100%; width: 100%; position: absolute;  flex-direction: column; top: 50%; left: 50%; z-index: 5; text-align: center; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.inner-banner {background: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 
 .inbanner-txt1 h2 { width: 100%; line-height: 1; font-size: 22px; font-weight: 100; color: #fff; }
 
