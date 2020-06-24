@@ -927,57 +927,67 @@ Room 216, 17 Vereyskaya st.,"Vereyskaya Plaza-2" 121357, Moscow</div>
               
         <h2 class="service-tit aclr">Contact Service</h2>
         <div class="contact-form clearfix">
-            <form class="feedback" classid="93" error="error" success="success" rel="Title,Email,Phone,Country,City,Address,Organisation,Intro,Content">
-                <div class="contact-item1" data-children-count="1">
+            <form class="feedback" id="feedback" classid="93" error="error" success="success" rel="Title,Email,Phone,Country,City,Address,Organisation,Intro,Content">
+                <div class="contact-item1">
                     <input type="text" class="contact-intxt1 contact-conput required" name="Title" msg="Please enter your name">
                     <span class="contact-inplace">Name<i>*</i></span>
                 </div>
 
-                <div class="contact-item1" data-children-count="1">
-                    <input type="text" class="contact-intxt1 contact-conput required email" name="Email" title="Email" msg="Please enter your E-mail Address" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-0">
-                    <span class="contact-inplace">E-mail Address<i>*</i></span>
+                <div class="contact-item1 clearfix">
+                    <div class="contacdt-item2">
+                        <input type="text" class="contact-intxt1 contact-conput required email" name="Email" title="Email" msg="Please enter your E-mail Address" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-0">
+                        <span class="contact-inplace">E-mail Address<i>*</i></span>
+                    </div>
+    
+                    <div class="contacdt-item2">
+                        <select required id="select">
+                            <option value="sales">Sales</option>
+                            <option value="service">Service</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="contact-item1" data-children-count="1">
+                <div class="contact-item1">
                     <input type="text" class="contact-intxt1 contact-conput required phone" name="Phone" title="Phone" msg="Please enter your Phone" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-1">
                     <span class="contact-inplace">Phone<i>*</i></span>
                 </div>
 
                 <div class="contact-item1 clearfix">
-                    <div class="contacdt-item2" data-children-count="1">
+                    <div class="contacdt-item2">
                         <input type="text" class="contact-intxt1 contact-conput required" name="Country" msg="Please enter your Country" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-2">
                         <span class="contact-inplace">Country<i>*</i></span>
                     </div>
                     
-                    <div class="contacdt-item2" data-children-count="1">
+                    <div class="contacdt-item2">
                         <input type="text" class="contact-intxt1 contact-conput required" name="City" msg="Please enter your City" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-3">
                         <span class="contact-inplace">City<i>*</i></span>
                     </div>
                 </div>
 
-                <div class="contact-item1" data-children-count="1">
+                <div class="contact-item1">
                     <input type="text" class="contact-intxt1 contact-conput required" name="Address" msg="Please enter your Address" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-4">
                     <span class="contact-inplace">Address</span>
                 </div>
 
-                <div class="contact-item1" data-children-count="1">
+                <div class="contact-item1">
                     <input type="text" class="contact-intxt1 contact-conput required" name="Organisation" msg="Please enter your Organisation/Company Name" data-kwimpalastatus="alive" data-kwimpalaid="1592573571535-5">
                     <span class="contact-inplace">Organisation/Company Name<i>*</i></span>
                 </div>
 
-                <div class="contact-item3" data-children-count="1">
+                <div class="contact-item3">
                     <h6 class="contact-h6">What is the subject of your inquiry?<i data-children-count="0">*</i></h6>
-                    <textarea class="contact-textarea required" name="Intro" msg="Please enter your inquiry"></textarea>
+                    <textarea class="contact-textarea required" name="Subject of inquiry" msg="Please enter your inquiry"></textarea>
                 </div>
 
-                <div class="contact-item3" data-children-count="1">
-                    <h6 class="contact-h6">What is your question?<i data-children-count="0">*</i></h6>
+                <div class="contact-item3">
+                    <h6 class="contact-h6">What is your question?<i>*</i></h6>
                     <textarea class="contact-textarea required" name="Content" msg="Please enter your question"></textarea>
                 </div>
 
                 <div class="contact-item4">
-                    <input type="submit" value="Submit" class="contact-fsub">
+                    <input type="submit" id="submit" value="Submit" class="contact-fsub">
                     <input type="reset" value="Clear" class="contact-fret">
+                    <p id="status"></p>
                 </div>
             </form>
         </div>
