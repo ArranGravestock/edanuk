@@ -770,6 +770,8 @@ body.active { padding-top: 60px; }
 
 .contact-item1 input, .contacdt-item2 input { position: relative; z-index: 5; width: 100%; height: 40px; line-height: 40px; font-size: 14px; color: #666; border-bottom: 1px solid #e6e6e6; background: transparent; -webkit-transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; transition: all .3s; }
 
+.contacdt-item2 select { height: 40px; }
+
 .contact-item1 input:focus, .contacdt-item2 input:focus { color: #7fbe26; border-color: #7fbe26; }
 
 .contact-inplace { position: absolute; bottom: 50%; left: 0; z-index: 1; line-height: 1; font-size: 14px; color: #333333; -webkit-transform: translateY(50%); -moz-transform: translateY(50%); -ms-transform: translateY(50%); -o-transform: translateY(50%); transform: translateY(50%); -webkit-transition: all .3s; -o-transition: all .3s; -moz-transition: all .3s; transition: all .3s; }
@@ -2187,7 +2189,6 @@ body.active { padding-top: 60px; }
 .contacdt-item2 select {
     border-bottom: 1px solid #e6e6e6;
     width: 100%;
-    height: 40px;
 }
 
 .contact-item4 {
