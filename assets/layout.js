@@ -1137,7 +1137,7 @@ $(window).bind('beforeunload', function(e){
       if(select.value == 'sales') {
         ajax("POST", "https://formspree.io/myyndypk", data, success, error);
       } else {
-        ajax("POST", "", data, success, error);
+        ajax("POST", "https://formspree.io/mjvaegkw", data, success, error);
       }
     });
   });
