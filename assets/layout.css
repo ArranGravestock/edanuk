@@ -1895,6 +1895,7 @@ body.active { padding-top: 60px; }
   .contact-con { padding-bottom: 90px; }
   .contact-form { padding-top: 50px; }
   .contact-item1 input, .contacdt-item2 input { height: 50px; line-height: 50px; font-size: 16px; }
+  .contacdt-item2 select { height: 50px; }
   .contact-inplace { font-size: 16px; }
   .contact-item3 { margin-top: 28px; }
   .contact-item3 textarea { font-size: 16px; }
