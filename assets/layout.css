@@ -2194,7 +2194,6 @@ body.active { padding-top: 60px; }
 .contact-item4 {
     display: flex;
     align-items: center;
-    
 }
 
 details {
@@ -2241,9 +2240,6 @@ details[open] summary {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.iM50-pdfs {
 }
 
 .iM50-pdfs > ul > li > a {
