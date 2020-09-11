@@ -2197,6 +2197,55 @@ body.active { padding-top: 60px; }
     
 }
 
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 16px 16px 0;
+    font: inherit;
+}
+
+summary {
+    font-weight: bold;
+    margin: -16px -16px 0;
+    padding: 16px;
+    font: inherit;
+}
+
+details[open] {
+    padding: 16px;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 16px;
+}
+
 .iM50 {
     padding: 10% 5% 10% 5%;
+}
+
+.iM50-description {
+    margin-bottom: 24px;
+}
+
+.iM50-description > ul > li {
+    list-style: circle;
+    margin-left: 14px;
+}
+
+.iM50-videos {
+    margin-bottom: 8px;
+}
+
+.iM50-videos > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iM50-pdfs {
+}
+
+.iM50-pdfs > ul > li > a {
+    text-decoration: underline;
 }
