@@ -77,7 +77,9 @@ var _hmt = _hmt || [];
                 return str1 * 24 * 60 * 60 * 1000;
             }
         }
-    </script><script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=439379"></script></head>
+    </script>
+    <script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=439379"></script>
+    </head>
 <body>
  <!-- inheader 头部 start -->
 <header class="inheader clearfix">
@@ -300,20 +302,87 @@ manually delete the cookies at any time.</p><p></p>
 
     <details class="iM50-videos">
         <summary>Video Guides</summary>
-        <ul>
-            <li>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iIRFWExCaao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-            <li>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TBFCcWEGSYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-            <li>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wpW2zdvZKBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-            <li>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iNCp8171RU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-        </ul>
+
+        <div class="videos-details" id="videos-container">        
+            <form id="submit-form-videos">
+                <p id="item1">To access the training videos for the iM50 please complete the following:</p>
+
+                <div class="contact-item1" id="item2">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Initials" msg="Please enter your initials">
+                    <label class="contact-inplace">Initials</label>
+                </div>
+
+                <div class="contact-item1" id="item3">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Department" msg="Please enter your department">
+                    <label class="contact-inplace">Department <i>*</i></label>
+                </div>
+
+                <div class="contact-item1" id="item4">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Hospital" msg="Please enter your hospital">
+                    <label class="contact-inplace">Hospital</label>
+                </div>
+
+                <div class="contact-item1" id="item5">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Title" msg="Please enter your postcode">
+                    <label class="contact-inplace">Postcode</label>
+                </div>
+
+                <div id="item6">
+                    <p style="margin-top: 24px;">If you require more help or advice please complete the following:</p>
+                    <hr/>
+                </div>
+
+                <div class="contact-item1" id="item7">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Full Name" msg="Please enter your full name">
+                    <label class="contact-inplace">Full name</label>
+                </div>
+
+                <div class="contact-item1" id="item8">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Postion" msg="Please enter your position">
+                    <label class="contact-inplace">Position</label>
+                </div>
+
+                <div class="contact-item1" id="item9">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Email" msg="Please enter your email">
+                    <label class="contact-inplace">Email</label>
+                </div>
+
+                <div class="contact-item1" id="item10">
+                    <input type="text" class="contact-intxt1 contact-conput required" name="Telephone" msg="Please enter your telephone">
+                    <label class="contact-inplace">Telephone</label>
+                </div>
+
+                <div class="contact-item3" id="item11">
+                    <h6 class="contact-h6">Reason for contact</h6>
+                    <textarea class="contact-textarea required" name="Contact" msg="Please enter reason for contact"></textarea>
+                </div>
+
+                <div id="item13">
+                    <a href="./gdpr">GDPR &amp; Privacy Policy</a>
+                </div>
+
+                <div class="contact-item4" id="item12">
+                    <input type="reset" value="Clear" class="contact-fret">
+                    <input type="submit" id="submit-btn" value="Submit" class="contact-fsub">
+                    <p id="status"></p>
+                </div>
+            </form>
+
+            <ul class="video-list hidden" id="video-list">
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iIRFWExCaao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TBFCcWEGSYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpW2zdvZKBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iNCp8171RU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+            </ul>
+        </div>
     </details>
 
     <details class="iM50-pdfs">
@@ -453,6 +522,66 @@ manually delete the cookies at any time.</p><p></p>
         </div>
     </div>
 </footer> <script type="text/javascript" src="assets/layout.js"></script>
+
+<script>
+
+    window.addEventListener("DOMContentLoaded", function() {
+        let submit = document.getElementById('submit-form-videos')
+        submit.addEventListener('submit', submitWrapper, true)
+
+        let cookie = JSON.parse(localStorage.getItem("show-videos"));
+        if(cookie === true) {
+            hideForm();
+            showVideos();
+        }
+    })
+
+    function submitWrapper(e) {
+        e.preventDefault();
+
+        submitForm();
+        localStorage.setItem('show-videos', true);
+        hideForm();
+        showVideos();
+
+    }
+
+    function submitForm() {
+
+        var form = document.getElementById("submit-form-videos");
+        var status = document.getElementById("status");
+
+        function success() {
+            form.reset();
+            status.innerHTML = "Thanks for your submission!";
+            localStorage.setItem('show-videos', true);
+        }
+
+        function error() {
+            status.innerHTML = "Oops! There was a problem.";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            // ajax("POST", "https://formspree.io/mjvaegkw", data, success, error);
+        });
+    }
+
+    function hideForm() {
+
+        document.getElementById('submit-form-videos').classList.add('hidden');
+        
+    }
+
+    function showVideos() {
+
+        document.getElementById('video-list').classList.remove('hidden');
+
+    }
+</script>
 
 
 </body></html>

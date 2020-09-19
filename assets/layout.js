@@ -1099,7 +1099,6 @@ with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 ];
 
 $(window).bind('beforeunload', function(e){
-    console.log(e.target.activeElement.href);
     if(e.target && e.target.activeElement && e.target.activeElement.href && e.target.activeElement.href.includes('edan.com')) {
         return 'You are leaving to visit the Edan China, are you sure you want to leave?';
     }
@@ -1111,7 +1110,6 @@ $(window).bind('beforeunload', function(e){
   window.addEventListener("DOMContentLoaded", function() {
 
     // get the form elements defined in your form HTML above
-    
     var form = document.getElementById("feedback");
     var button = document.getElementById("submit");
     var select = document.getElementById("select");
