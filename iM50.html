@@ -310,7 +310,7 @@ manually delete the cookies at any time.</p><p></p>
         <summary>Video Guides</summary>
 
         <div class="videos-details" id="videos-container">        
-            <form id="submit-form-videos">
+            <form id="submit-form-videos" error="error" success="success">
                 <p id="item1">To access the training videos for the iM50 please complete the following:</p>
 
                 <div class="contact-item1" id="item2">
@@ -572,7 +572,7 @@ manually delete the cookies at any time.</p><p></p>
         form.addEventListener("submit", function(ev) {
             ev.preventDefault();
             var data = new FormData(form);
-            // ajax("POST", "https://formspree.io/mjvaegkw", data, success, error);
+            ajax("POST", "https://formspree.io/mleodgby", data, success, error);
         });
     }
 
