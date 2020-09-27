@@ -284,7 +284,13 @@ manually delete the cookies at any time.</p><p></p>
 </div>
 <!-- cookies-box end --><!-- edition 版本切换 start -->
 
-
+<div id="gdpr-modal" class="gdpr-modal hidden">
+    <div class="modal-background" onclick="hideModal()"></div>
+    <div class="modal-content">
+        <div class="modal-actions" onclick="hideModal()">X</div>
+        <p>We use your initials, department, hospital & postcode to understand where our customers are querying from. If you fill in more details for help or advice, these will not be stored as they are only used to reach out to you in request so that we may provide assistance. We do not store, process or share any details provided - all submitted forms are deleted from our inbox after 30 days of use. We use <a href="https://formspree.io/">Formspree</a> for receiving submitted forms.</p>
+    </div>
+</div>
 
 <div class="iM50">
     <h1>iM50 Patient Monitor</h1>
@@ -358,7 +364,7 @@ manually delete the cookies at any time.</p><p></p>
                 </div>
 
                 <div id="item13">
-                    <a href="./gdpr">GDPR &amp; Privacy Policy</a>
+                    <p onclick="showModal()">How we use your information</p>
                 </div>
 
                 <div class="contact-item4" id="item12">
@@ -580,6 +586,18 @@ manually delete the cookies at any time.</p><p></p>
 
         document.getElementById('video-list').classList.remove('hidden');
 
+    }
+
+    function hideModal() {
+        
+        document.getElementById('gdpr-modal').classList.add('hidden');
+        
+    }
+
+    function showModal() {
+
+        document.getElementById('gdpr-modal').classList.remove('hidden');
+        
     }
 </script>
 
