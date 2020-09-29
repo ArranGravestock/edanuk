@@ -288,7 +288,7 @@ manually delete the cookies at any time.</p><p></p>
     <div class="modal-background" onclick="hideModal()"></div>
     <div class="modal-content">
         <div class="modal-actions" onclick="hideModal()">X</div>
-        <p>We use your initials, department, hospital & postcode to understand where our customers are querying from. If you fill in more details for help or advice, these will not be stored as they are only used to reach out to you in request so that we may provide assistance. We do not store, process or share any details provided - all submitted forms are deleted from our inbox after 30 days of use. We use <a href="https://formspree.io/">Formspree</a> for receiving submitted forms.</p>
+        <p>We use your initials, department, hospital & postcode to understand where our customers are querying from. If you fill in more details for help or advice, those details will not be stored as they are only used to reach out to you in request so that we may provide assistance. We do not store, process or share any details provided - all submitted forms are deleted from our inbox after 30 days of use. We use <a href="https://formspree.io/">Formspree</a> for receiving submitted forms.</p>
     </div>
 </div>
 
@@ -306,100 +306,104 @@ manually delete the cookies at any time.</p><p></p>
         </ul>
     </section>
 
-    <details class="iM50-videos">
-        <summary>Video Guides</summary>
+          
+    <form id="submit-form-videos" error="error" success="success">
+        <p id="item1">To access the training videos, manuals &amp; datasheets for the iM50 please complete the following:</p>
 
-        <div class="videos-details" id="videos-container">        
-            <form id="submit-form-videos" error="error" success="success">
-                <p id="item1">To access the training videos for the iM50 please complete the following:</p>
-
-                <div class="contact-item1" id="item2">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Initials" msg="Please enter your initials">
-                    <label class="contact-inplace">Initials</label>
-                </div>
-
-                <div class="contact-item1" id="item3">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Department" msg="Please enter your department" required>
-                    <label class="contact-inplace">Department <i>*</i></label>
-                </div>
-
-                <div class="contact-item1" id="item4">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Hospital" msg="Please enter your hospital">
-                    <label class="contact-inplace">Hospital</label>
-                </div>
-
-                <div class="contact-item1" id="item5">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Title" msg="Please enter your postcode">
-                    <label class="contact-inplace">Postcode</label>
-                </div>
-
-                <div id="item6">
-                    <p style="margin-top: 24px;">If you require more help or advice please complete the following:</p>
-                    <hr/>
-                </div>
-
-                <div class="contact-item1" id="item7">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Full Name" msg="Please enter your full name">
-                    <label class="contact-inplace">Full name</label>
-                </div>
-
-                <div class="contact-item1" id="item8">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Postion" msg="Please enter your position">
-                    <label class="contact-inplace">Position</label>
-                </div>
-
-                <div class="contact-item1" id="item9">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Email" msg="Please enter your email">
-                    <label class="contact-inplace">Email</label>
-                </div>
-
-                <div class="contact-item1" id="item10">
-                    <input type="text" class="contact-intxt1 contact-conput required" name="Telephone" msg="Please enter your telephone">
-                    <label class="contact-inplace">Telephone</label>
-                </div>
-
-                <div class="contact-item3" id="item11">
-                    <h6 class="contact-h6">Reason for contact</h6>
-                    <textarea class="contact-textarea required" name="Contact" msg="Please enter reason for contact"></textarea>
-                </div>
-
-                <div id="item13">
-                    <p onclick="showModal()">How we use your information</p>
-                </div>
-
-                <div class="contact-item4" id="item12">
-                    <input type="reset" value="Clear" class="contact-fret">
-                    <input type="submit" id="submit-btn" value="Submit" class="contact-fsub">
-                    <p id="status"></p>
-                </div>
-            </form>
-
-            <ul class="video-list hidden" id="video-list">
-                <li>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iIRFWExCaao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TBFCcWEGSYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpW2zdvZKBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iNCp8171RU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-            </ul>
+        <div class="contact-item1" id="item2">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Initials" msg="Please enter your initials" required>
+            <label class="contact-inplace">Initials <i>*</i></label>
         </div>
-    </details>
 
-    <details class="iM50-pdfs">
-        <summary>Manuals &amp; Datasheet</summary>
-        <ul>
-            <li><a href="./assets/pdfs/im50-datasheet.pdf">Datasheet download</a></li>
-            <li><a href="./assets/pdfs/im50-service-manual.pdf">Service manual download</a></li>
-            <li><a href="./assets/pdfs/im50-user-manual.pdf">User manual download</a></li>
-        </ul>
+        <div class="contact-item1" id="item3">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Department" msg="Please enter your department" required>
+            <label class="contact-inplace">Department <i>*</i></label>
+        </div>
 
-    </details>
+        <div class="contact-item1" id="item4">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Hospital" msg="Please enter your hospital" required>
+            <label class="contact-inplace">Hospital <i>*</i></label>
+        </div>
+
+        <div class="contact-item1" id="item5">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Title" msg="Please enter your postcode" required>
+            <label class="contact-inplace">Postcode <i>*</i></label>
+        </div>
+
+        <div id="item6">
+            <p style="margin-top: 24px;">If you require more help or advice please complete the following (optional):</p>
+            <hr/>
+        </div>
+
+        <div class="contact-item1" id="item7">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Full Name" msg="Please enter your full name">
+            <label class="contact-inplace">Full name</label>
+        </div>
+
+        <div class="contact-item1" id="item8">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Postion" msg="Please enter your position">
+            <label class="contact-inplace">Position</label>
+        </div>
+
+        <div class="contact-item1" id="item9">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Email" msg="Please enter your email">
+            <label class="contact-inplace">Email</label>
+        </div>
+
+        <div class="contact-item1" id="item10">
+            <input type="text" class="contact-intxt1 contact-conput required" name="Telephone" msg="Please enter your telephone">
+            <label class="contact-inplace">Telephone</label>
+        </div>
+
+        <div class="contact-item3" id="item11">
+            <h6 class="contact-h6">Reason for contact</h6>
+            <textarea class="contact-textarea required" name="Contact" msg="Please enter reason for contact"></textarea>
+        </div>
+
+        <div id="item13">
+            <p onclick="showModal()">How we use your information</p>
+        </div>
+
+        <div class="contact-item4" id="item12">
+            <input type="reset" value="Clear" class="contact-fret">
+            <input type="submit" id="submit-btn" value="Submit" class="contact-fsub">
+            <p id="status"></p>
+        </div>
+    </form>
+
+    <div id="further-details" class="hidden">
+
+        <details class="iM50-videos">
+            <summary>Video Guides</summary>
+            <div class="videos-details" id="videos-container">  
+                <ul class="video-list" id="video-list">
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iIRFWExCaao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TBFCcWEGSYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wpW2zdvZKBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iNCp8171RU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </details>
+        
+        <details class="iM50-pdfs">
+            <summary>Manuals &amp; Datasheet</summary>
+            <ul>
+                <li><a href="./assets/pdfs/im50-datasheet.pdf">Datasheet download</a></li>
+                <li><a href="./assets/pdfs/im50-service-manual.pdf">Service manual download</a></li>
+                <li><a href="./assets/pdfs/im50-user-manual.pdf">User manual download</a></li>
+            </ul>
+            
+        </details>
+
+    </div>
 </div>
 
 <!-- data-lang当前语言版本 英文站en，中文站zh -->
@@ -538,7 +542,7 @@ manually delete the cookies at any time.</p><p></p>
         let cookie = JSON.parse(localStorage.getItem("show-videos"));
         if(cookie === true) {
             hideForm();
-            showVideos();
+            showDetails();
         }
     })
 
@@ -548,7 +552,7 @@ manually delete the cookies at any time.</p><p></p>
         submitForm();
         localStorage.setItem('show-videos', true);
         hideForm();
-        showVideos();
+        showDetails();
 
     }
 
@@ -582,9 +586,9 @@ manually delete the cookies at any time.</p><p></p>
         
     }
 
-    function showVideos() {
+    function showDetails() {
 
-        document.getElementById('video-list').classList.remove('hidden');
+        document.getElementById('further-details').classList.remove('hidden');
 
     }
 
