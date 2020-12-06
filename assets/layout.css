@@ -8970,12 +8970,15 @@ hr {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 16px;
-  padding-left: 4px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.products > ul li img {
+  width: 200px;
 }
 .products > ul li.active {
   transform: translateX(1px);
