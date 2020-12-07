@@ -2348,6 +2348,11 @@ hr {
 }
 
 .products-section {
+
+    >img {
+        width: 100%;
+    }
+    
     > h2 {
         font-size: 32px;
         color: #7fbe26;
@@ -2377,6 +2382,8 @@ hr {
 }
 
 .products {
+
+    
 
     display: flex;
     width: 75%;

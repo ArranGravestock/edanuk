@@ -8944,6 +8944,9 @@ hr {
   margin-bottom: 8px;
 }
 
+.products-section > img {
+  width: 100%;
+}
 .products-section > h2 {
   font-size: 32px;
   color: #7fbe26;
