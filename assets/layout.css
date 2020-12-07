@@ -8954,14 +8954,26 @@ hr {
   text-decoration: underline;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .products {
   display: flex;
   width: 75%;
   margin: 14px auto;
   position: relative;
-}
-.products iframe {
-  width: 100%;
 }
 .products > ul {
   display: flex;
