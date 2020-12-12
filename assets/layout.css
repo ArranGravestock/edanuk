@@ -9055,3 +9055,13 @@ hr {
   background-color: #7fbe26;
   color: white;
 }
+
+@media only screen and (max-width: 1024px) {
+  .instruction-videos {
+    width: 90%;
+  }
+
+  .products {
+    width: 90%;
+  }
+}

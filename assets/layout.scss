@@ -2448,6 +2448,7 @@ hr {
 
 }
 
+
 .instruction-videos {
     width: 60%;
     display: flex;
@@ -2478,4 +2479,15 @@ hr {
 .btn--primary {
     background-color: #7fbe26;
     color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .instruction-videos {
+        width: 90%;
+    }
+
+    .products {
+        width: 90%;
+    }
 }
