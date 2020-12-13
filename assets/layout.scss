@@ -2383,70 +2383,48 @@ hr {
 
 .products {
     display: flex;
-    width: 75%;
-    margin: 14px auto;
-    position: relative;
-    
-    > ul {
-        display: flex; 
-        flex-direction: column;
-        width: max-content;
-        z-index: 5;
-        
-        li {
-            padding-top: 8px;
-            padding-bottom: 8px;
-            font-size: 16px;
-            padding-left: 10px;
-            padding-right: 10px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                width: 200px;
-            }
-            
-            &.currently-active {
-                transform: translateX(1px);
-                border-top: 1px solid rgb(238, 238, 238);
-                border-bottom: 1px solid rgb(238, 238, 238);
-                border-right: 1px solid white;
-                border-left: 2px solid #95cb42;
-            }
-        }
-    }
-    
-    .wrapper {
-        border-top: 1px solid rgb(238, 238, 238);
-        flex-grow: 1;
-        padding: 12px 12px 0 12px;
-        border-left: 1px solid rgb(238, 238, 238);
-
-    }
-}
-
-.products-body {
-
-    display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
-    section {    
-        .header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+    section {
+        display: flex;
+        flex-direction: row;
+        padding: 8px 0 16px 0;
+        margin-top: 8px;
+        
+        .product__body {
+            flex-grow: 1;
+        }
+        
+        &:nth-child(n) {   
+            border-bottom: 1px solid #ededed;
+        }
+
+        &:first-child {
+            border-top: 1px solid #ededed;
+        }
+
+        &:last-child {
+            border-bottom: none;
         }
 
         details {
             margin-bottom: 8px;
-
-            display: flex;
         }
     }
 
+    .product-img {
+        width: 200px;
+    }
 }
+
+.banner--obgyn {
+    background-color: #F9827F;
+    color: white;
+    padding: 8px;
+    border-bottom: 1px solid #ededed;
+}
+
 
 
 .instruction-videos {

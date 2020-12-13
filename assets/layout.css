@@ -8974,56 +8974,39 @@ hr {
 
 .products {
   display: flex;
-  width: 75%;
-  margin: 14px auto;
-  position: relative;
-}
-.products > ul {
-  display: flex;
   flex-direction: column;
-  width: max-content;
-  z-index: 5;
+  margin: 0 auto;
 }
-.products > ul li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.products > ul li img {
-  width: 200px;
-}
-.products > ul li.currently-active {
-  transform: translateX(1px);
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid white;
-  border-left: 2px solid #95cb42;
-}
-.products .wrapper {
-  border-top: 1px solid #eeeeee;
-  flex-grow: 1;
-  padding: 12px 12px 0 12px;
-  border-left: 1px solid #eeeeee;
-}
-
-.products-body {
-  display: flex;
-  flex-direction: column;
-}
-.products-body section .header {
+.products section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  padding: 8px 0 16px 0;
+  margin-top: 8px;
 }
-.products-body section details {
+.products section .product__body {
+  flex-grow: 1;
+}
+.products section:nth-child(n) {
+  border-bottom: 1px solid #ededed;
+}
+.products section:first-child {
+  border-top: 1px solid #ededed;
+}
+.products section:last-child {
+  border-bottom: none;
+}
+.products section details {
   margin-bottom: 8px;
-  display: flex;
+}
+.products .product-img {
+  width: 200px;
+}
+
+.banner--obgyn {
+  background-color: #F9827F;
+  color: white;
+  padding: 8px;
+  border-bottom: 1px solid #ededed;
 }
 
 .instruction-videos {
