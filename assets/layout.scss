@@ -2294,11 +2294,27 @@ hr {
 }
 
 
+@media(max-width: 100px) {
+    .video-list {
+        li {
+            max-width: 100%;
+        }
+    }
+}
 
-.videos-details > ul {
+@media(min-width: 1001px) {
+    .video-list {
+        max-width: 70%;
+    }
+}
+
+.video-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+
+    li {
+        margin-bottom: 16px;
+    }
 }
 
 .iM50-pdfs > ul > li > a {
