@@ -8998,6 +8998,7 @@ hr {
 }
 .products section .product__body {
   flex-grow: 1;
+  padding-left: 12px;
 }
 .products section:nth-child(n) {
   border-bottom: 1px solid #ededed;
@@ -9038,6 +9039,11 @@ hr {
   margin: 16px 0 16px 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.videos-wrapper h2 {
+  width: 60%;
 }
 
 .btn {
@@ -9053,6 +9059,10 @@ hr {
 }
 
 @media only screen and (max-width: 1024px) {
+  .videos-wrapper h2 {
+    width: 90%;
+  }
+
   .instruction-videos {
     width: 90%;
   }
